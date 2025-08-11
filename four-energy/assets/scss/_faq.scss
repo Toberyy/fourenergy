@@ -1,0 +1,100 @@
+.faq{
+    margin-bottom: 126px;
+    .title{
+        font-weight: 300;
+        margin-bottom: 17px;
+        padding: 0 39px;
+    }
+
+    .faq__wrapper{
+        display: flex;
+        gap: 60px;
+        position: relative;
+        align-items: flex-start;
+        @media (max-width:1440px){
+            gap: 30px;
+        }
+        @media (max-width:768px){
+            flex-direction: column-reverse;
+          }
+        .faq__content{
+            max-width: 785px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .faq__content-item{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 140%;
+                padding: 18px 66px 0 39px;
+                transition: 0.3s ease;
+                border-radius: 20px;
+                border: 1px solid #EAEAEA;
+                background: #FFF;
+                position: relative;
+                cursor: pointer;
+                @media (max-width:768px){
+                    font-size: 16px;
+                  }
+                .faq__content-quest{
+                    margin-bottom: 17px;
+                    transition: 0.3s ease;
+                }
+                .faq__content-quest-icon{
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    background-image: url('../svg/arrow-down.svg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    right: 24px;
+                    top: 23px;
+
+
+                    transition: 0.3s ease;
+                }
+
+                &.open{
+
+                    transition: 0.3s ease;
+                    background: #F4F4F4;
+                    border: 1px solid #F4F4F4;
+                    .faq__content-quest{
+                        margin-bottom: 16px;
+                        transition: 0.3s ease;
+                    }
+                    .faq__content-quest-icon{
+
+                        transform: rotate(180deg);
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+            .faq__content-answer{
+                margin-bottom: 22px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                @media (max-width:768px){
+                    font-size: 14px;
+                }
+
+                ul{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+    }
+    .faq__text{
+        max-width: 696px;
+        width: 100%;
+        position: sticky;
+        top: 150px;
+        @media (max-width:768px){
+            position: static;
+          }
+    }
+}

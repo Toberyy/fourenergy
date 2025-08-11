@@ -1,0 +1,94 @@
+
+.own-equipment{
+
+
+    .container{
+        overflow: hidden;
+    }
+    
+    .title{
+        font-weight: 300;
+        margin-bottom: 23px;
+        img{
+            max-height: 100%;
+            width: 149px;
+            height: 70px;
+            transform: translate(0px, 20px);
+            margin-top: -40px;
+            display: inline;
+            @media (max-width:1440px){
+                width: 99px;
+                height: 40px;
+                transform: translate(0px, 10px);
+            }
+        }
+    }
+    .subtitle{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 140%;
+        @media (max-width:1600px){
+            font-size: 20px;
+        }
+    }
+    .own-equipment-slider{
+        padding-top: 44px;
+        @media (max-width:768px){
+            padding-top: 15px;
+            margin-top: 75px;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            top: -30px;
+        }
+    }
+    .own-equipment-block{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        border-radius: 40px;
+        border: 1px solid #EAEAEA;
+        padding: 40px 38px 34px 40px;
+        width: 100%;
+        @media (max-width:1024px){
+            border-radius: 30px;
+         }
+        img {
+            height: 170px;
+            object-fit: contain;
+            object-position: left;
+        }
+        .own-equipment-block_text {
+            display: flex;
+            flex-direction: column;
+            .own-equipment-block_name {
+                display: flex;
+                gap: 19px;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 120%;
+                margin-bottom: 26px;
+                @media (max-width:1440px){
+                    font-size: 22px;
+                }
+                img{
+                    max-width: 60px;
+                    width: 100%;
+                    height: 60px;
+
+                    @media (max-width:1440px){
+                        max-width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+            .own-equipment-block__desc{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+    }
+}
+

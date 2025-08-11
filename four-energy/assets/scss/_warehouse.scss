@@ -1,0 +1,170 @@
+.warehouse{
+    .warehouse__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        width: 100%;
+        justify-content: end;
+        justify-items: center;
+        @media (max-width:1440px){
+            grid-template-columns: 1fr 530px;
+        }
+        @media (max-width:1024px){
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .warehouse__content{
+
+            display: flex;
+            flex-direction: column;
+
+            .warehouse__content_blocks{
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+                margin-bottom: 55px;
+                @media (max-width:768px){
+                    grid-template-columns: 1fr;
+                }
+                .warehouse__block{
+                    display: flex;
+                    
+                    flex-direction: column;
+                    gap: 22px;
+                    padding: 40px 38px 42px 39px;
+                    border-radius: 40px;
+                    background: #F4F4F4;
+                    @media (max-width:1024px){
+                        border-radius: 30px;
+                     }
+                    .warehouse__block_name{
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 120%;
+                        display: flex;
+                        gap: 15px;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        margin-top: 12px;
+                        img{
+                            max-width: 60px;
+                        }
+
+                        @media (max-width:1600px){
+                            font-size: 20px;
+                        }
+                    }
+
+                    .warehouse__block_text{
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+            }
+            .warehouse__content_title{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 42px;
+                @media (max-width:768px){
+                    grid-template-columns: 1fr;
+                }
+                .title{
+                    font-size: 44px;
+                    font-weight: 600;
+                    line-height: 120%; /* 52.8px */
+                    letter-spacing: -0.88px;
+                    margin-bottom: 23px;
+
+                    @media (max-width:1600px){
+                        font-size: 36px;
+                    }
+                    @media (max-width:1440px){
+                        font-size: 30px;
+                    }
+                }
+                .warehouse__subtitle{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+                .warehouse__number{
+                    font-size: 110px;
+                    font-weight: 300;
+                    line-height: 100%; 
+                    letter-spacing: -2.2px;
+                    margin-bottom: 18px;
+                    display: block;
+                    @media (max-width:1600px){
+                        font-size: 100px;
+                    }
+                    @media (max-width:1440px){
+                        font-size: 70px;
+                    }
+                }
+
+
+                .warehouse__number-text{
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 120%; /* 31.2px */
+                    letter-spacing: -0.52px;
+                }
+                .warehouse__title_numbers{
+                    max-width: 190px;
+                }
+            }
+        }
+        .warehouse__slider{
+            position: relative;
+            max-width: 784px;
+            width: 100%;
+            overflow-x: clip;
+            max-height: 511px;
+            @media ( max-width: 1600px) {
+                max-width: 724px;
+                max-height: 471px;
+            }
+            @media (max-width:1440px){
+                max-width: 530px;
+                max-height: 330px;
+            }
+            @media (max-width:1024px){
+                max-width: 100%;
+                height: 260px;
+             }
+            .warehouse-img{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                img{
+                    width: 100%;
+                    max-height: unset;
+                    height: 100%;
+                    border-radius: 40px;
+                    @media (max-width:1024px){
+                        border-radius: 30px;
+                     }
+                }
+            }
+            .swiper-button-prev, .swiper-button-next{
+                bottom: 20px;
+                top: unset;
+            }
+            .swiper-button-next{
+                right: unset;
+                left: 90px;
+                bottom: 20px;
+                top: unset;
+            }
+            .swiper-button-prev{
+                right: unset;
+                left: 20px;
+                bottom: 20px;
+                top: unset;
+            }
+        }
+    }
+}

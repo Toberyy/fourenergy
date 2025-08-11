@@ -1,0 +1,71 @@
+.cta_invoice{
+    .cta__wrapper{
+        padding: 94px 126px 94px 39px;
+        position: relative;
+        @media (max-width:1440px) {
+            padding: 60px 20px 60px 20px;
+        }
+        @media (max-width:1024px) {
+            display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+    }
+   
+   
+    .title{
+
+        margin-bottom: 22px;
+    }
+    .cta-block__subtitle{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+
+
+        margin-bottom: 41px;
+        @media (max-width:1600px) {
+           font-size: 18px;
+        }
+    }
+    .cta-block__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .cta__list{
+        @media (max-width:1024px) {
+            grid-column: span 2;
+            .cta__list_item{
+                max-width: 100%;
+            }
+        }
+    }
+    .cta-block__visual{
+        width: 373.329px;
+        height: 492px;
+        position: absolute;
+        right: 48%;
+        transform: translate(48%, 0px);
+        bottom: 0;
+        @media (max-width:1440px) {
+            width: 233px;
+            height: 308px;
+            position: absolute;
+            right: 48%;
+            transform: translate(48%, 0px);
+            bottom: 0;
+         }
+         @media (max-width:1024px) {
+            width: 193px;
+            height: 168px;
+            position: static;
+            transform: unset;
+            position: absolute;
+            right: 0px;
+            top: 20px;
+            z-index: -1;
+         }
+
+    }
+}

@@ -1,0 +1,204 @@
+
+.team{
+    .title{
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .team__text{
+       
+        .team__text_content{
+            display: flex;
+            gap: 41px;
+            align-items: center;
+
+            margin-bottom: 54px;
+            @media (max-width:1024px){
+                gap: 20px;
+                flex-direction: column;
+
+            }
+            @media (max-width:768px){
+                margin-bottom: 70px;
+            }
+            .team__text_text{
+                max-width: 744px;
+                width: 100%;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 140%;
+                @media (max-width:1600px){
+                    font-size: 20px;
+                }
+            }
+            .team__text_info{
+                display: flex;
+                gap: 50px;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        font-size: 60px;
+                        font-weight: 300;
+                        line-height: 120%;
+                        letter-spacing: -1.2px;
+                        margin-bottom: 4px;
+                        @media (max-width:1440px){
+                            font-size: 36px;
+                        }
+                    }
+                    p{
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 120%;
+                        letter-spacing: -0.52px;
+                        @media (max-width:1440px){
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .team__content {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 818px;
+        position: relative;
+        padding-bottom: 150px;
+        @media (max-width:1600px){
+            padding-bottom: 210px;
+        }
+        @media (max-width:1440px){
+            padding-left: 568px;
+        }
+        @media (max-width:1024px){
+            padding-left: 0;
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+      
+        .team__content_slider{
+            width: 784px;
+            overflow-x: clip;
+            padding-top: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @media (max-width:1440px){
+                width: 634px;
+            }
+            @media (max-width:1440px){
+                max-width: 550px;
+            }
+            @media (max-width:1024px){
+                max-width: 767px;
+                width: 100%;
+                position: static;
+            }
+            .team__content_slide{
+                padding: 10px 10px 26px;
+                border-radius: 40px;
+                border: 1px solid #EAEAEA;
+                width: 100%;
+
+                @media (max-width:1024px){
+                    border-radius: 30px;
+                 }
+                .team__content_slide-img{
+                    border-radius: 30px;
+                    background: #F4F4F4;
+                    height: 236px;
+                    margin-bottom: 22px;
+                    display: flex;
+                    position: relative;
+                    width: 100%;
+                    img{
+                        max-height: 282px;
+                        width: 210px;
+                        height: 282px;
+                        border-radius: 0;
+                        position: absolute;
+                        bottom: 0;
+                        object-fit: contain;
+                        object-position: bottom;
+                        left: 50%;
+                        transform: translate(-50%, 0px);
+                        @media (max-width:1440px){
+                            height: 230px;
+                        }
+                    }
+                    margin-bottom: 22px;
+                    
+                    
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 140%; 
+                    margin-bottom: 2px;
+                    padding: 0 29px; 
+                    @media (max-width:1440px){
+                        font-size: 18px;
+                        padding: 0 15px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 140%;
+                    color:#A9A9A9;
+                    padding: 0 29px; 
+                    @media (max-width:1440px){
+                        font-size: 16px;
+                        padding: 0 15px;
+                    }
+                }
+                span{
+                    padding: 0 29px; 
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 140%;
+                    @media (max-width:1440px){
+                        font-size: 14px;
+                        padding: 0 15px;
+                    }
+                }
+            }
+            .swiper-button-prev, .swiper-button-next{
+                @media (max-width:1440px){
+                
+                    top: -35px;
+                }
+                
+            }
+        }
+        .team__content_list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 36px;
+            @media (max-width:1440px){
+                gap: 10px;
+            }
+            .team__content_list-item{
+                padding: 19px 26px;
+                border-radius: 30px;
+                background: #F4F4F4;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 120%;
+                letter-spacing: 0.16px;
+                @media (max-width:1440px){
+                    padding: 12px 12px;
+                    font-size: 14px;
+                }
+                span{
+                    padding: 0 4px 3px;
+                }
+            }
+        }
+    }
+}

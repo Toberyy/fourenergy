@@ -1,0 +1,126 @@
+.automation-benefits__content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width:1440px){
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media (max-width:1024px){
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width:768px){
+        grid-template-columns: 1fr ;
+      }
+    .automation-benefits__title {
+        grid-column: 2 span;
+
+        h2{
+            margin-bottom: 19px;
+            font-weight: 300;
+        }
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 140%; 
+        max-width: 670px;
+        @media (max-width:1440px){
+            max-width: 100%;
+          }
+          @media (max-width:768px){
+            grid-column: auto;
+            font-size: 18px;
+          }
+    }
+    .automation-benefits__block {
+        display: flex;
+        flex-direction: column;
+        padding: 52px 38px 37px 39px;
+        border-radius: 40px;
+        border: 1px solid #EAEAEA;
+        gap: 37px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        min-height: 192px;
+        align-items: center;
+        justify-content: flex-start;
+        @media (max-width:1024px){
+           border-radius: 30px;
+           min-height: 135px;
+           gap: 20px;
+        }
+        span{
+            max-width: 230px;
+            width: 100%;
+            display: block;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 120%;
+            @media (max-width:1024px){
+                font-size: 20px;
+            }
+            @media (max-width:768px){
+                font-size: 16px;
+              }
+        }
+        img{
+            max-width: 60px;
+            height: 60px;
+            @media (max-width:1024px){
+                max-width: 50px;
+                height: 50px;
+            }
+        }
+
+        .automation-benefits__block_name {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+    }
+}
+.automation-benefits__down {
+    display: flex;
+    padding: 0 39px;
+    align-items: center;
+    margin-top: 46px;
+  
+    img {
+      max-width: 50px;
+      height: 50px;
+      margin-right: 14px;
+      display: block;
+      animation: floatY 1.5s ease-in-out infinite;
+      will-change: transform;
+  
+      // отключаем анимацию, если пользователь предпочитает минимальное движение
+      @media (prefers-reduced-motion: reduce) {
+        animation: none;
+      }
+    }
+  
+    p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 120%;
+        @media (max-width:1024px){
+            font-size: 19px;
+        }
+        @media (max-width:768px){
+            font-size: 16px;
+        }
+    }
+  }
+  
+  // keyframes
+  @keyframes floatY {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
